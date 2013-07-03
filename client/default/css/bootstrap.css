@@ -1,4 +1,4 @@
-/*!
+ca/*!
  * Bootstrap v2.3.0
  *
  * Copyright 2012 Twitter, Inc
@@ -509,7 +509,8 @@ a:focus {
   *margin-left: 87.12765957446807%;
 }
 
-.row-fluid .offset10:first-child {
+.row-fluid .offset10ile demonstrates how to use a shared configuration file. In this
+case the absol:first-child {
   margin-left: 85.1063829787234%;
   *margin-left: 84.99999999999999%;
 }
@@ -614,7 +615,7 @@ a:focus {
   float: right;
 }
 
-.container {
+.container {..
   margin-right: auto;
   margin-left: auto;
   *zoom: 1;
