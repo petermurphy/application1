@@ -1,0 +1,77 @@
+info it worked if it ends with ok
+info using fhc@0.8.2-306
+info using node@v0.10.10
+silly config file /home/pmurphy/.fhcrc
+silly config file /usr/local/etc/fhcrc
+verbose feedhenry url https://hpcs.feedhenry.com
+silly get container Getting app container from url: https://hpcs.feedhenry.com/, domain: hpcs
+verbose feedhenry url https://hpcs.feedhenry.com/
+silly POST box/srv/1.1/ide/hpcs/app/read
+silly url, unparsed https://hpcs.feedhenry.com/
+verbose resolveUrl - IN box/srv/1.1/ide/hpcs/app/read
+verbose resolveUrl - OUT https://hpcs.feedhenry.com/box/srv/1.1/ide/hpcs/app/read
+verbose calling url https://hpcs.feedhenry.com/box/srv/1.1/ide/hpcs/app/read payload: { payload: { guid: 'mPwBE3L2mHTaTWJZRB_V3usA' } }
+silly port 443
+silly cookie feedhenry=O4CbYmngNQRSY9AUrVvPrF5q;
+silly nocache false
+silly explain level 0
+verbose getHeaders { accept: 'application/json',
+verbose getHeaders   cookie: 'feedhenry=O4CbYmngNQRSY9AUrVvPrF5q;',
+verbose getHeaders   'User-Agent': 'FHC/0.8.2-306 linux/3.2.0-48-generic-pae',
+verbose getHeaders   'content-type': 'application/json',
+verbose getHeaders   'content-length': 47 }
+verbose what... { payload: { guid: 'mPwBE3L2mHTaTWJZRB_V3usA' } }
+silly writing json { payload: { guid: 'mPwBE3L2mHTaTWJZRB_V3usA' } }
+silly headers { accept: 'application/json',
+silly headers   cookie: 'feedhenry=O4CbYmngNQRSY9AUrVvPrF5q;',
+silly headers   'User-Agent': 'FHC/0.8.2-306 linux/3.2.0-48-generic-pae',
+silly headers   'content-type': 'application/json',
+silly headers   'content-length': 47 }
+silly getProxy null
+silly response headers { date: 'Wed, 03 Jul 2013 09:50:16 GMT',
+silly response headers   p3p: 'CP="ALL ADM DEV PSAi COM OUR OTRo STP IND ONL" policyref="/box/p3p.xml"',
+silly response headers   etag: '"LRfOOzNPUnv3A4l87y1JOF"',
+silly response headers   'content-type': 'application/json;charset=UTF-8',
+silly response headers   'content-length': '1157',
+silly response headers   vary: 'Accept-Encoding',
+silly response headers   'keep-alive': 'timeout=15, max=100',
+silly response headers   connection: 'Keep-Alive' }
+silly 
+> bson@0.1.5 install /home/pmurphy/code_examples/node_modules/fh-db/node_modules/mongodb/node_modules/bson
+> node install.js || (exit 0)
+
+================================================================================
+=                                                                              =
+=  Attempting to build bson c++ extension                                      =
+=   Windows: no build will be attempted as binaries are prepackaged            =
+=   Unix: on failure the package will still install without the C++ extension  =
+=                                                                              =
+================================================================================
+node-gyp clean
+node-gyp configure build
+make[1]: Entering directory `/home/pmurphy/code_examples/node_modules/fh-db/node_modules/mongodb/node_modules/bson/build'
+  CXX(target) Release/obj.target/bson/ext/bson.o
+  SOLINK_MODULE(target) Release/obj.target/bson.node
+  SOLINK_MODULE(target) Release/obj.target/bson.node: Finished
+  COPY Release/bson.node
+make[1]: Leaving directory `/home/pmurphy/code_examples/node_modules/fh-db/node_modules/mongodb/node_modules/bson/build'
+child process exited with code 0
+fh-db@0.4.3-26 ../../../node_modules/fh-db
+├── async@0.1.9
+└── mongodb@1.2.8 (bson@0.1.5)
+ npm install fh-db stdout
+silly npm http GET https://registry.npmjs.org/fh-db
+npm http 304 https://registry.npmjs.org/fh-db
+npm http GET https://registry.npmjs.org/async/0.1.9
+npm http GET https://registry.npmjs.org/mongodb/1.2.8
+npm http 304 https://registry.npmjs.org/async/0.1.9
+npm http 304 https://registry.npmjs.org/mongodb/1.2.8
+npm http GET https://registry.npmjs.org/bson/0.1.5
+npm http 304 https://registry.npmjs.org/bson/0.1.5
+ npm install fh-db stderr
+WARN application.js No existing application.js file, creating
+ERR! Error: ENOENT, open './cloud/application.js'
+ERR! 
+ERR! System Linux 3.2.0-48-generic-pae
+ERR! command "node" "/usr/local/bin/fhc" "local" "app1"
+verbose exit [ 34, true ]
